@@ -1,0 +1,42 @@
+@import './base.css';
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem;
+
+}
+
+body {
+
+  background-color: var(--barvaPozadi-jedna);
+
+}
+
+
+
+h1 {
+
+  text-align: center;
+  color: aquamarine;
+  margin: auto;
+  padding: 2rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+h2 {
+  text-align: center;
+  color: rgb(8, 104, 72);
+  margin: auto;
+  padding: 1rem;
+}
+p {
+  text-align: center;
+  color: rgb(93, 129, 27);
+  margin: auto;
+  padding: 1rem;
+  font-size: large;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
