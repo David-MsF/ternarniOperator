@@ -34,7 +34,7 @@ function toggleDiv(divNumber) {
   </div>
 
   <div class="kartaDve">
-    <span @click="toggleDiv(3)" style="font-size: 2em; cursor: pointer;">Direktiva v-on</span>
+    <span @click="toggleDiv(3)" style="font-size: 2em;  cursor: pointer;">Direktiva v-on</span>
     <DirektivaOn v-if="activeDiv === 3" />
   </div>
 
@@ -52,6 +52,7 @@ function toggleDiv(divNumber) {
   margin-top: 10px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: darkseagreen;
+  text-align: center;
 }
 
 </style>
