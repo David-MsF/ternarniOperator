@@ -45,8 +45,8 @@ setInterval( () => {
     <p>suma pole (computed): {{ sumaComputed%2 ? "sudé" : "liché" }}</p>
     <p> suma : {{ sumaComputed }}</p>   -->
     <p>Náhodné generování obdélníku</p>
-    <p>Délka obdelníku : {{  cisloDelka }} cm</p>
-    <p>Výška obdelníku : {{  cisloVyska }} cm</p>
+    <p>Délka  : {{  cisloDelka }} cm</p>
+    <p>Výška  : {{  cisloVyska }} cm</p>
     <p>Obsah obdelníku : {{  obsahObdelniku }} cm</p>
 
 
