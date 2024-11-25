@@ -11,7 +11,7 @@ setInterval (() => {
 
 <template>
     
-    <h2>Ternární operátor</h2>
+    
   
   
   <p>Padlo číslo: {{ nahodneCislo  }}</p>

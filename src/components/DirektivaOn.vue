@@ -26,17 +26,17 @@ const vysledek = computed(() => {
 </script>
 
 <template>
-    <h2>Direktiva v-on</h2>
+    
 
-    <h3> Zahrajeme si :)) Klikni na kostky </h3>
-    <hr>
+    <h2> Zahrajeme si :)) Klikni na kostky </h2>
+   
     <div class="tlacitka">
         <!--   <button id="hodit" @click="hodit">Hoď kostkami!!</button> -->
         <img class="kostka" src="/src/image/kostky.jpg" alt="" @click="hodit" style="cursor: pointer;">
     </div>
     <!--<img class = "kostka " src= "/src/image/kostky.jpg" alt=""> -->
 
-    <hr>
+    
     <p>První kostka: {{ prvniKostka }}</p>
     <p>Druhá kostka: {{ druhaKostka }}</p>
     <p>Výsledek: {{ vysledek }}</p>

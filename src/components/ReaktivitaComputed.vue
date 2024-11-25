@@ -39,12 +39,11 @@ setInterval( () => {
 
 
 <template>
-    <h2>Reaktivita Computed</h2>
+    <h2>Náhodné generování obdélníku</h2>
     <!--<p>pole čísel: {{  poleCisel }}</p>
     <p>suma pole ( function ): {{ zjistitSumu() }}</p> !!! dává zabrat PC 
     <p>suma pole (computed): {{ sumaComputed%2 ? "sudé" : "liché" }}</p>
     <p> suma : {{ sumaComputed }}</p>   -->
-    <p>Náhodné generování obdélníku</p>
     <p>Délka  : {{  cisloDelka }} cm</p>
     <p>Výška  : {{  cisloVyska }} cm</p>
     <p>Obsah obdelníku : {{  obsahObdelniku }} cm</p>
