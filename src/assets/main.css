@@ -1,8 +1,8 @@
 @import './base.css';
 
 .container {
-  max-width:max-content ;
-  margin: 0;
+  max-width:100% ;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
 
@@ -181,7 +181,7 @@ hr {
 
 /* Nastavení vysoké výšky pro html a body */
 html, body {
-  height:120%; /* Celá výška okna prohlížeče */
+  height:100%; /* Celá výška okna prohlížeče */
   overflow: auto; /* Skrytí posuvníků, pokud nejsou potřeba */
 }
 

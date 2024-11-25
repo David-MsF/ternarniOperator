@@ -49,7 +49,7 @@ function toggleDiv(divNumber) {
 <style scoped>
 
 .kartaTri, .karta, .kartaDve {
-  margin-top: 20px;
+  margin-top: 10px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: darkseagreen;
 }
