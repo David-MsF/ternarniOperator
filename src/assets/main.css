@@ -181,14 +181,14 @@ hr {
 
 /* Nastavení vysoké výšky pro html a body */
 html, body {
-  height: 100%; /* Celá výška okna prohlížeče */
-  overflow: hidden; /* Skrytí posuvníků, pokud nejsou potřeba */
+  height:120%; /* Celá výška okna prohlížeče */
+  overflow: auto; /* Skrytí posuvníků, pokud nejsou potřeba */
 }
 
 /* Rodičovský kontejner */
 #container {
-  position: relative; /* Relativní pozicování pro děti */
-  height: 100%; /* Nastavení na 100% výšky */
+  position: relative; /* Relativní pozicování  */
+  height:100%; /* Nastavení na 100% výšky */
 }
 
 /* Přední vrstva částic */
