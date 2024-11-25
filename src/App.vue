@@ -4,7 +4,6 @@ import ReaktivitaComputed from "./components/ReaktivitaComputed.vue";
 import TernarniOperator from "./components/TernarniOperator.vue";
 import DirektivaOn from "./components/DirektivaOn.vue";
 
-
 const nahodneCislo = ref(Math.floor(Math.random()*50));
 setInterval (() => {
   nahodneCislo.value = (Math.floor(Math.random()*50));
@@ -19,6 +18,7 @@ function toggleDiv(divNumber) {
 
 
 <template>
+  
   <h1> Ahoj :)) Vítám Tě na mé stránce "Studijní úkoly" </h1>
   <h1>David MsF</h1>
   <h2> Webdesign & JavaScript student</h2>
@@ -37,6 +37,7 @@ function toggleDiv(divNumber) {
     <span @click="toggleDiv(3)" style="font-size: 2em; cursor: pointer;">Direktiva v-on</span>
     <DirektivaOn v-if="activeDiv === 3" />
   </div>
+
 
 
 

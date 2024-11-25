@@ -2,16 +2,73 @@
 
 .container {
   max-width: 1200px;
-  margin: auto;
-  padding: 2rem;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
 
 }
 
+/* ---- reset ---- */
 body {
-
-  background-color: var(--barvaPozadi-jedna);
-
+  margin: 0;
+  /*font: normal 75% Arial, Helvetica, sans-serif; */
 }
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+} 
+
+/* ---- particles.js container ---- */
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: #000000;
+  /*background-image: url("http://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/NASA_logo.svg/1237px-NASA_logo.svg.png"); */
+  background-repeat: no-repeat;
+  background-size: 20%;
+  background-position: 50% 50%;
+}
+
+/* ---- stats.js ---- */
+/*
+.count-particles {
+  background: #000022;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 80px;
+  color: #13E8E9;
+  font-size: .8em;
+  text-align: left;
+  text-indent: 4px;
+  line-height: 14px;
+  padding-bottom: 2px;
+  font-family: Helvetica, Arial, sans-serif;
+  font-weight: bold;
+} */
+
+/*.js-count-particles {
+  font-size: 1.1em;
+}*/
+
+/*#stats,
+.count-particles {
+  -webkit-user-select: none;
+  margin-top: 5px;
+  margin-left: 5px;
+} */
+
+/*#stats {
+  border-radius: 3px 3px 0 0;
+  overflow: hidden;
+}
+*/
+/*.count-particles {
+  border-radius: 0 0 3px 3px;
+}*/
 
 
 
@@ -30,7 +87,9 @@ h2 {
   color: rgb(8, 104, 72);
   margin: auto;
   padding: 1rem;
+  font-size: x-large;
 }
+
 p {
   text-align: center;
   color: rgb(93, 129, 27);
@@ -40,47 +99,78 @@ p {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
 }
-.karta{
+
+#bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+body {
+
+  background-color: var(--barvaPozadi-jedna);
+
+}
+
+
+
+
+
+
+.karta {
   margin: 0.5rem 1.5rem;
   padding: 1rem;
-  background-color: rgb(32, 2, 2) ;
+  background-color: rgb(32, 2, 2);
   border-style: double;
   border-radius: 25%;
-  position: relative; /* Nutný pro transformaci */
-  transform: translateX(-100%); /* Posun na levou stranu */
-  animation: slideIn 3s forwards; /* Animace pro vjezd zleva */
+  position: relative;
+  /* Nutný pro transformaci */
+  transform: translateX(-100%);
+  /* Posun na levou stranu */
+  animation: slideIn 3s forwards;
+  /* Animace pro vjezd zleva */
 }
 
 hr {
- 
+
   margin: 1rem 30rem;
 
 }
+
 .kartaDve {
   margin: 0.5rem 1.5rem;
   padding: 1rem;
-  background-color: rgb(32, 2, 2) ;
+  background-color: rgb(32, 2, 2);
   border-style: double;
   border-radius: 25%;
 
-  /*width: 200px; /* např. šířka kartyDve */ 
+  /*width: 200px; /* např. šířka kartyDve */
   /*height: 100px; /* např. výška kartyDve */
   /*background-color: lightcoral;
   /*margin: 10px; */
 
-  position: relative; /* Nutný pro transformaci */
-  transform: translateX(+100%); /* Posun na levou stranu */
-  animation: slideIn 3s forwards; /* Animace pro vjezd zleva */
+  position: relative;
+  /* Nutný pro transformaci */
+  transform: translateX(+100%);
+  /* Posun na levou stranu */
+  animation: slideIn 3s forwards;
+  /* Animace pro vjezd zleva */
 }
+
 .kartaTri {
   margin: 0.5rem 1.5rem;
   padding: 1rem;
-  background-color: rgb(32, 2, 2) ;
+  background-color: rgb(32, 2, 2);
   border-style: double;
   border-radius: 25%;
-  position: relative; /* Nutný pro transformaci */
-  transform: translateX(+100%); /* Posun na levou stranu */
-  animation: slideIn 3s forwards; /* Animace pro vjezd zleva */
+  position: relative;
+  /* Nutný pro transformaci */
+  transform: translateX(+100%);
+  /* Posun na levou stranu */
+  animation: slideIn 3s forwards;
+  /* Animace pro vjezd zleva */
 }
 
 @keyframes slideIn {
@@ -89,3 +179,31 @@ hr {
   }
 }
 
+/* Nastavení vysoké výšky pro html a body */
+html, body {
+  height: 100%; /* Celá výška okna prohlížeče */
+  overflow: hidden; /* Skrytí posuvníků, pokud nejsou potřeba */
+}
+
+/* Rodičovský kontejner */
+#container {
+  position: relative; /* Relativní pozicování pro děti */
+  height: 100%; /* Nastavení na 100% výšky */
+}
+
+/* Přední vrstva částic */
+#particles-js {
+  position: absolute; /* Absolutní umístění, aby pokrýval celé pozadí */
+  top: 0; /* Odshora */
+  left: 0; /* Zleva */
+  width: 100%; /* Celá šířka */
+  height: 100%; /* Celá výška */
+  z-index: 0; /* Za ostatními prvky */
+}
+
+/* První vrstva aplikace */
+#app {
+  position: relative; /* Relativní umístění v rámci kontejneru */
+  z-index: 1; /* Nad pozadím částic */
+  
+}
