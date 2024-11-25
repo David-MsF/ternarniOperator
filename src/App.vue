@@ -1,13 +1,14 @@
 <script setup>
-import {ref} from "vue";
+import { ref } from "vue";
 import ReaktivitaComputed from "./components/ReaktivitaComputed.vue";
 import TernarniOperator from "./components/TernarniOperator.vue";
 import DirektivaOn from "./components/DirektivaOn.vue";
+import DirektivaVBind from "./components/DirektivaVBind.vue";
 
-const nahodneCislo = ref(Math.floor(Math.random()*50));
-setInterval (() => {
-  nahodneCislo.value = (Math.floor(Math.random()*50));
-},2000 );
+const nahodneCislo = ref(Math.floor(Math.random() * 50));
+setInterval(() => {
+  nahodneCislo.value = (Math.floor(Math.random() * 50));
+}, 2000);
 
 const activeDiv = ref(null); // Přidáno pro sledování aktivního divu
 
@@ -18,11 +19,11 @@ function toggleDiv(divNumber) {
 
 
 <template>
-  
+
   <h1> Ahoj :)) Vítám Tě na mé stránce "Studijní úkoly" </h1>
   <h1>David MsF</h1>
   <h2> Webdesign & JavaScript student</h2>
-  
+
   <div class="kartaTri">
     <span @click="toggleDiv(1)" style="font-size: 2em; cursor: pointer;">Ternární operátor</span>
     <TernarniOperator v-if="activeDiv === 1" />
@@ -38,7 +39,10 @@ function toggleDiv(divNumber) {
     <DirektivaOn v-if="activeDiv === 3" />
   </div>
 
-
+  <div class="karta">
+    <span @click="toggleDiv(4)" style="font-size: 2em; cursor: pointer;">Direktiva v-bind</span>
+    <DirektivaVBind v-if="activeDiv === 4" />
+  </div>
 
 
 
@@ -47,12 +51,14 @@ function toggleDiv(divNumber) {
 
 
 <style scoped>
+.kartaTri,
+.karta,
+.kartaDve {
 
-.kartaTri, .karta, .kartaDve {
   margin-top: 10px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   color: darkseagreen;
   text-align: center;
-}
 
+}
 </style>
