@@ -32,7 +32,7 @@ const vysledek = computed(() => {
    
     <div class="tlacitka">
         <!--   <button id="hodit" @click="hodit">Hoď kostkami!!</button> -->
-        <img class="kostka" src="/src/image/kostky.jpg" alt="" @click="hodit" style="cursor: pointer;">
+        <img class="kostka" src="../assets/image/kostky.jpg" alt="" @click="hodit" style="cursor: pointer;">
     </div>
     <!--<img class = "kostka " src= "/src/image/kostky.jpg" alt=""> -->
 

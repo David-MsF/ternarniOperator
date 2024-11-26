@@ -4,6 +4,7 @@ import ReaktivitaComputed from "./components/ReaktivitaComputed.vue";
 import TernarniOperator from "./components/TernarniOperator.vue";
 import DirektivaOn from "./components/DirektivaOn.vue";
 import DirektivaVBind from "./components/DirektivaVBind.vue";
+import NahodnyObrazek from "./components/NahodnyObrazek.vue";
 
 const nahodneCislo = ref(Math.floor(Math.random() * 50));
 setInterval(() => {
@@ -42,6 +43,10 @@ function toggleDiv(divNumber) {
   <div class="karta">
     <span @click="toggleDiv(4)" style="font-size: 2em; cursor: pointer;">Direktiva v-bind</span>
     <DirektivaVBind v-if="activeDiv === 4" />
+  </div>
+  <div class="kartaDve">
+    <span @click="toggleDiv(5)" style="font-size: 2em;  cursor: pointer;">Náhodný obrázek</span>
+    <NahodnyObrazek v-if="activeDiv === 5" />
   </div>
 
 
