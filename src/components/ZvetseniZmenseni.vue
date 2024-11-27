@@ -41,7 +41,7 @@ img {
 }
 
 .maximalizace {
-    width: 30rem;
+    width: 500px;
 }
 .but {
     background-color: #7db47e; 
