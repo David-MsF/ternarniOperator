@@ -5,6 +5,7 @@ import TernarniOperator from "./components/TernarniOperator.vue";
 import DirektivaOn from "./components/DirektivaOn.vue";
 import DirektivaVBind from "./components/DirektivaVBind.vue";
 import NahodnyObrazek from "./components/NahodnyObrazek.vue";
+import ZvetseniZmenseni from "./components/ZvetseniZmenseni.vue";
 
 const nahodneCislo = ref(Math.floor(Math.random() * 50));
 setInterval(() => {
@@ -48,6 +49,12 @@ function toggleDiv(divNumber) {
     <span @click="toggleDiv(5)" style="font-size: 2em;  cursor: pointer;">Náhodný obrázek</span>
     <NahodnyObrazek v-if="activeDiv === 5" />
   </div>
+  
+  <div class="karta">
+    <span @click="toggleDiv(6)" style="font-size: 2em; cursor: pointer;">Změna velikosti obrázku</span>
+    <ZvetseniZmenseni v-if="activeDiv === 6" />
+  </div>
+
 
 
 

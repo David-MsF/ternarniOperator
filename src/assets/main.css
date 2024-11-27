@@ -86,7 +86,7 @@ h2 {
   text-align: center;
   color: rgb(8, 104, 72);
   margin: auto;
-  padding: 1rem;
+  padding: 0.5rem;
   font-size: x-large;
 }
 
@@ -94,7 +94,7 @@ p {
   text-align: center;
   color: rgb(93, 129, 27);
   margin: auto;
-  padding: 1rem;
+  padding: 0.5rem;
   font-size: large;
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 
