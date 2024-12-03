@@ -7,6 +7,7 @@ import DirektivaVBind from "./components/DirektivaVBind.vue";
 import NahodnyObrazek from "./components/NahodnyObrazek.vue";
 import ZvetseniZmenseni from "./components/ZvetseniZmenseni.vue";
 import DynamickeKolecko from "./components/DynamickeKolecko.vue";
+import PinKod from "./components/PinKod.vue";
 
 const nahodneCislo = ref(Math.floor(Math.random() * 50));
 setInterval(() => {
@@ -60,6 +61,12 @@ function toggleDiv(divNumber) {
     <span @click="toggleDiv(7)" style="font-size: 2em;  cursor: pointer;">Dynamické Kolečko</span>
     <DynamickeKolecko v-if="activeDiv === 7" />
   </div>
+
+  <div class="karta">
+    <span @click="toggleDiv(8)" style="font-size: 2em; cursor: pointer;">Pin code</span>
+    <PinKod v-if="activeDiv === 8" />
+  </div>
+
 
 
 
