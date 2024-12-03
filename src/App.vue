@@ -51,7 +51,7 @@ function toggleDiv(divNumber) {
     <span @click="toggleDiv(5)" style="font-size: 2em;  cursor: pointer;">Náhodný obrázek</span>
     <NahodnyObrazek v-if="activeDiv === 5" />
   </div>
-  
+
   <div class="karta">
     <span @click="toggleDiv(6)" style="font-size: 2em; cursor: pointer;">Změna velikosti obrázku</span>
     <ZvetseniZmenseni v-if="activeDiv === 6" />
