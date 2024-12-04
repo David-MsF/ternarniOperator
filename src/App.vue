@@ -8,6 +8,7 @@ import NahodnyObrazek from "./components/NahodnyObrazek.vue";
 import ZvetseniZmenseni from "./components/ZvetseniZmenseni.vue";
 import DynamickeKolecko from "./components/DynamickeKolecko.vue";
 import PinKod from "./components/PinKod.vue";
+import SeznamSuma from "./components/SeznamSuma.vue";
 
 const nahodneCislo = ref(Math.floor(Math.random() * 50));
 setInterval(() => {
@@ -66,6 +67,12 @@ function toggleDiv(divNumber) {
     <span @click="toggleDiv(8)" style="font-size: 2em; cursor: pointer;">Pin code</span>
     <PinKod v-if="activeDiv === 8" />
   </div>
+
+  <div class="kartaDve">
+    <span @click="toggleDiv(9)" style="font-size: 2em;  cursor: pointer;">Přidej sumu do seznamu</span>
+    <SeznamSuma v-if="activeDiv === 9" />
+  </div>
+
 
 
 
