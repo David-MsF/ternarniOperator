@@ -9,6 +9,7 @@ import ZvetseniZmenseni from "./components/ZvetseniZmenseni.vue";
 import DynamickeKolecko from "./components/DynamickeKolecko.vue";
 import PinKod from "./components/PinKod.vue";
 import SeznamSuma from "./components/SeznamSuma.vue";
+import VlastniNadpis from "./components/VlastniNadpis.vue";
 
 const nahodneCislo = ref(Math.floor(Math.random() * 50));
 setInterval(() => {
@@ -73,6 +74,10 @@ function toggleDiv(divNumber) {
     <SeznamSuma v-if="activeDiv === 9" />
   </div>
 
+  <div class="karta">
+    <span @click="toggleDiv(10)" style="font-size: 2em; cursor: pointer;">Nastyluj si nadpis</span>
+    <VlastniNadpis v-if="activeDiv === 10" />
+  </div>
 
 
 
