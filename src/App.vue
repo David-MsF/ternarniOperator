@@ -10,6 +10,7 @@ import DynamickeKolecko from "./components/DynamickeKolecko.vue";
 import PinKod from "./components/PinKod.vue";
 import SeznamSuma from "./components/SeznamSuma.vue";
 import VlastniNadpis from "./components/VlastniNadpis.vue";
+import MazesPises from "./components/MazesPises.vue";
 
 const nahodneCislo = ref(Math.floor(Math.random() * 50));
 setInterval(() => {
@@ -79,7 +80,10 @@ function toggleDiv(divNumber) {
     <VlastniNadpis v-if="activeDiv === 10" />
   </div>
 
-
+  <div class="kartaDve">
+    <span @click="toggleDiv(11)" style="font-size: 2em;  cursor: pointer;">Píšeš nebo mažeš?</span>
+    <MazesPises v-if="activeDiv === 11" />
+  </div>
 
 
 
